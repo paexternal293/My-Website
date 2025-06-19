@@ -104,10 +104,10 @@ export default function App() {
     <HashRouter>
       <motion.div className="w-full" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}}>
         <Routes>
-          <Route path="/My-Website" element={<PuzzlePage />} />
-          <Route path="/My-Website/form" element={<UserFormPage />} />
-          <Route path="/My-Website/second-game" element={<SecondGamePage />} />
-          <Route path="/My-Website/secure" element={<FinalPage />} />
+          <Route path="/" element={<PuzzlePage />} />
+          <Route path="/form" element={<UserFormPage />} />
+          <Route path="/second-game" element={<SecondGamePage />} />
+          <Route path="/secure" element={<FinalPage />} />
         </Routes>
       </motion.div>
     </HashRouter>

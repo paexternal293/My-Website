@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 function PuzzlePage() {
@@ -101,7 +101,7 @@ function FinalPage() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <motion.div className="w-full" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}}>
         <Routes>
           <Route path="/My-Website" element={<PuzzlePage />} />
@@ -110,6 +110,6 @@ export default function App() {
           <Route path="/My-Website/secure" element={<FinalPage />} />
         </Routes>
       </motion.div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

@@ -101,7 +101,7 @@ function FinalPage() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/My-Website">
       <motion.div className="w-full" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}}>
         <Routes>
           <Route path="/" element={<PuzzlePage />} />
